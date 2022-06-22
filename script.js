@@ -3,8 +3,8 @@
        
 
         
-        fetch("https://handlers.education.launchcode.org/static/planets.json").then(function (response) {
-            return response.json()}).then(function (json) {
+        fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function (response) {
+            return response.json()}) .then(function (json) {
 
                 const div = document.getElementById("container");
                 let container = '';
@@ -20,7 +20,7 @@
                      <li>Skills: ${json[i].skills}</li>
                     </ul>
                 </div>
-            <img class="avatar" src=${json[i].picture}/>
+            <img class="avatar" src=${json[i].picture}>
           </div>
                     
                  `};
@@ -31,4 +31,4 @@
         
         });
 
-    
+   
